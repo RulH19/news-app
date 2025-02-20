@@ -8,4 +8,6 @@
     <string name="author">News Autho</string>
     <string name="published_date">Published Date</string>
     <string name="old">Old</string>
+    <string name="headline_news">Headline News</string>
+    <string name="news_update">News Update</string>
 </resources>
