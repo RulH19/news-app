@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="popularity">Popularity</string>
+    <string name="recent">Recent</string>
+    <string name="techrunch">Techrunch</string>
+    <string name="us">US</string>
+    <string name="news_title">News Title</string>
+    <string name="author">News Autho</string>
+    <string name="published_date">Published Date</string>
+    <string name="old">Old</string>
+</resources>

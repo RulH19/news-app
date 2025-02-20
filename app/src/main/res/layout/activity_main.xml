@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.view.home.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ice"
+        app:title="News App"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:menu="@menu/option_menu"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_techrunch"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="@string/techrunch"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@null"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_us"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/us" />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHeadline"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="8dp"
+        android:scrollbars="horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_popularity"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="@string/popularity"
+
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@null"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recent"
+            android:layout_width="112dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+
+            android:layout_marginStart="10dp"
+            android:text="@string/recent" />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        />
+</LinearLayout>
